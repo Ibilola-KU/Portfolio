@@ -863,3 +863,23 @@ h3 {
     width: 12.5rem;
   }
 }
+
+.home-themes > div h3 {
+  margin-bottom: 0.7rem;
+  font-size: 1.55rem;
+}
+
+.home-themes > div p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.home-themes > div {
+  padding-right: 1rem;
+}
+
+@media (max-width: 960px) {
+  .home-themes > div {
+    padding-right: 0;
+  }
+}
