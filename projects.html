@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Projects page for an AI in Design and Construction course portfolio.">
-  <title>Projects | AI in Design &amp; Construction</title>
+  <meta name="description" content="Examples of AI in AEC use cases, including class assignments and projects from an AI in Design and Construction course portfolio.">
+  <title>AI in AEC Use Cases | AI in Design and Construction</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -14,15 +14,17 @@
   <header class="site-header">
     <nav class="navbar">
       <a class="brand" href="index.html">
-        <span class="brand__name">AI in Design &amp; Construction</span>
-        <span class="brand__subtext">Course portfolio and semester work</span>
+        <span class="brand__name">AI in Design and Construction</span>
+        <span class="brand__subtext">Course portfolio</span>
       </a>
+
       <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
       <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="about.html">About Me</a>
-        <a href="projects.html" aria-current="page">Projects</a>
-        <a href="articles.html">Weekly Articles</a>
+        <a href="news.html">AI News Analysis</a>
+        <a href="use-cases.html" aria-current="page">AI in AEC Use Cases</a>
       </div>
     </nav>
   </header>
@@ -31,160 +33,281 @@
     <section class="page-hero section">
       <div class="container page-hero__grid">
         <div>
-          <span class="eyebrow">Projects</span>
-          <h1>Assignments and semester projects collected in one place.</h1>
-          <p class="lead">This page is meant for the work you created in the course, whether that includes prototypes, research summaries, design studies, visualizations, or tool experiments.</p>
+          <span class="eyebrow">Assignments and Projects</span>
+          <h1>Examples of AI in AEC Use Cases</h1>
+          <p class="lead">
+            This page presents class assignments and projects that illustrate how artificial
+            intelligence can be applied in architecture, engineering, and construction contexts.
+          </p>
+          <p>
+            Each entry includes a short description of the work, what the item represents,
+            and why the use case is helpful, important, or relevant to AEC practice.
+          </p>
+
+          <div class="hero__actions">
+            <a class="button" href="#use-case-grid">View Use Cases</a>
+            <a class="button-outline" href="news.html">AI News Analysis</a>
+          </div>
         </div>
-        <div class="panel">
-          <span class="eyebrow">How to use this page</span>
-          <h3>Keep each project card concise.</h3>
-          <p>For each project, include a title, a one- or two-sentence summary, a few tags, and a link to a detailed project page. That gives visitors enough context without making the overview page too dense.</p>
-        </div>
+
+        <aside class="panel">
+          <span class="eyebrow">Page Purpose</span>
+          <h3>What this section shows</h3>
+          <p>
+            The goal of this page is to document how AI-related ideas were explored through
+            coursework. The examples may include prompts, workflows, design studies, research
+            summaries, visual outputs, or applied analyses connected to AEC topics.
+          </p>
+        </aside>
       </div>
     </section>
 
     <section class="section section--tight">
       <div class="container section-header">
         <div>
-          <span class="eyebrow">Portfolio Grid</span>
-          <h2>Replace these sample cards with your actual course work.</h2>
+          <span class="eyebrow">How to read the page</span>
+          <h2>What each use case entry includes</h2>
         </div>
-        <p class="lead">Each card below is a placeholder you can edit. Duplicate a card when you add new projects.</p>
+        <p class="lead">
+          Keep the format consistent so visitors can quickly understand what each assignment
+          involved and why it matters.
+        </p>
+      </div>
+
+      <div class="container grid-3">
+        <article class="panel">
+          <h3>What it is</h3>
+          <p>
+            Briefly state the assignment, exercise, or project and what you created for class.
+          </p>
+        </article>
+
+        <article class="panel">
+          <h3>What it represents</h3>
+          <p>
+            Explain the specific AI use case, workflow, or application the work demonstrates.
+          </p>
+        </article>
+
+        <article class="panel">
+          <h3>Why it matters</h3>
+          <p>
+            Describe why the example is useful, important, or relevant to design, construction,
+            or broader AEC practice.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--tight" id="use-case-grid">
+      <div class="container section-header">
+        <div>
+          <span class="eyebrow">Portfolio Entries</span>
+          <h2>Class assignments and project examples</h2>
+        </div>
+        <p class="lead">
+          Replace the sample entries below with your actual assignments, screenshots, links, or deliverables.
+        </p>
       </div>
 
       <div class="container grid-3">
         <article class="project-card">
           <div class="project-card__thumb">
             <div class="thumb-content">
-              <p class="small">Project 01</p>
-              <h3>AI Workflow Exploration</h3>
+              <p class="small">Use Case 01</p>
+              <h3>AI-Assisted Research Summary</h3>
             </div>
           </div>
-          <p>Use this card for a project where you tested an AI tool, workflow, or concept related to design and construction.</p>
+
+          <p>
+            <strong>What it is:</strong> A class assignment that used AI to summarize a topic,
+            article, or emerging issue related to the AEC industry.
+          </p>
+          <p>
+            <strong>What it represents:</strong> This example shows how AI can support information
+            synthesis, literature review, and faster understanding of complex topics.
+          </p>
+          <p>
+            <strong>Why it matters:</strong> In AEC work, professionals often review large amounts
+            of technical information. AI-assisted summarization may help improve efficiency and
+            make information easier to interpret.
+          </p>
+
           <div class="tags">
-            <span class="chip">AI Tools</span>
-            <span class="chip">Workflow</span>
+            <span class="chip">Research</span>
+            <span class="chip">Summarization</span>
             <span class="chip">Course Assignment</span>
           </div>
-          <div class="project-card__footer">
-            <span class="small muted">Update with your date or deliverable type.</span>
-            <a class="arrow-link" href="project-detail.html">View detail page →</a>
-          </div>
         </article>
 
         <article class="project-card">
           <div class="project-card__thumb">
             <div class="thumb-content">
-              <p class="small">Project 02</p>
-              <h3>Design Communication Study</h3>
+              <p class="small">Use Case 02</p>
+              <h3>Prompt-Based Design Exploration</h3>
             </div>
           </div>
-          <p>Use this space for an assignment focused on visual communication, representation, or how AI supports design decisions.</p>
-          <div class="tags">
-            <span class="chip">Visualization</span>
-            <span class="chip">Design</span>
-            <span class="chip">Analysis</span>
-          </div>
-          <div class="project-card__footer">
-            <span class="small muted">Replace with your project details.</span>
-            <a class="arrow-link" href="project-detail.html">View detail page →</a>
-          </div>
-        </article>
 
-        <article class="project-card">
-          <div class="project-card__thumb">
-            <div class="thumb-content">
-              <p class="small">Project 03</p>
-              <h3>Construction AI Case Review</h3>
-            </div>
-          </div>
-          <p>Use a project like this for a case analysis, article-based assignment, or short critical review related to the course.</p>
-          <div class="tags">
-            <span class="chip">Construction</span>
-            <span class="chip">Case Review</span>
-            <span class="chip">Research</span>
-          </div>
-          <div class="project-card__footer">
-            <span class="small muted">Add your final project title here.</span>
-            <a class="arrow-link" href="project-detail.html">View detail page →</a>
-          </div>
-        </article>
+          <p>
+            <strong>What it is:</strong> An assignment or exercise using prompts to generate ideas,
+            concepts, or alternative directions for a design-related task.
+          </p>
+          <p>
+            <strong>What it represents:</strong> This use case shows how AI can support ideation
+            and early-stage thinking by producing multiple starting points quickly.
+          </p>
+          <p>
+            <strong>Why it matters:</strong> In design and planning contexts, faster concept
+            generation can help teams compare options, communicate ideas, and structure early discussions.
+          </p>
 
-        <article class="project-card">
-          <div class="project-card__thumb">
-            <div class="thumb-content">
-              <p class="small">Project 04</p>
-              <h3>Prototype or Design Test</h3>
-            </div>
-          </div>
-          <p>This could be a concept model, generated visual, dashboard, mock-up, or another experiment you want to document.</p>
-          <div class="tags">
-            <span class="chip">Prototype</span>
-            <span class="chip">Iteration</span>
-          </div>
-          <div class="project-card__footer">
-            <span class="small muted">Swap in your own media and summary.</span>
-            <a class="arrow-link" href="project-detail.html">View detail page →</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-card__thumb">
-            <div class="thumb-content">
-              <p class="small">Project 05</p>
-              <h3>Prompting or Automation Exercise</h3>
-            </div>
-          </div>
-          <p>If you created a workflow using prompting, automation, or agentic behavior, this card gives you a place to explain it.</p>
           <div class="tags">
             <span class="chip">Prompting</span>
-            <span class="chip">Automation</span>
-          </div>
-          <div class="project-card__footer">
-            <span class="small muted">Connect this to your deliverable.</span>
-            <a class="arrow-link" href="project-detail.html">View detail page →</a>
+            <span class="chip">Ideation</span>
+            <span class="chip">Design</span>
           </div>
         </article>
 
         <article class="project-card">
           <div class="project-card__thumb">
             <div class="thumb-content">
-              <p class="small">Project 06</p>
-              <h3>Final Reflection or Capstone</h3>
+              <p class="small">Use Case 03</p>
+              <h3>AI in Construction Workflow Analysis</h3>
             </div>
           </div>
-          <p>Reserve one card for the final piece that ties together your major insights from the semester.</p>
+
+          <p>
+            <strong>What it is:</strong> A project or discussion task examining how AI could be
+            integrated into a construction workflow, process, or decision-making activity.
+          </p>
+          <p>
+            <strong>What it represents:</strong> This example highlights AI as a workflow-support
+            tool rather than only a content-generation tool.
+          </p>
+          <p>
+            <strong>Why it matters:</strong> Many AEC applications of AI relate to planning,
+            coordination, communication, and task support, which makes workflow analysis especially relevant.
+          </p>
+
           <div class="tags">
-            <span class="chip">Final</span>
-            <span class="chip">Reflection</span>
-            <span class="chip">Portfolio</span>
+            <span class="chip">Construction</span>
+            <span class="chip">Workflow</span>
+            <span class="chip">AEC</span>
           </div>
-          <div class="project-card__footer">
-            <span class="small muted">A strong closing project works well here.</span>
-            <a class="arrow-link" href="project-detail.html">View detail page →</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__thumb">
+            <div class="thumb-content">
+              <p class="small">Use Case 04</p>
+              <h3>Visual or Presentation Output</h3>
+            </div>
+          </div>
+
+          <p>
+            <strong>What it is:</strong> A class deliverable that used AI to support visuals,
+            presentation structure, layout ideas, or communication of technical content.
+          </p>
+          <p>
+            <strong>What it represents:</strong> This use case demonstrates how AI may assist
+            with the presentation and communication side of AEC work.
+          </p>
+          <p>
+            <strong>Why it matters:</strong> Clear communication is essential in AEC settings,
+            and AI-supported presentation tools may help make ideas more accessible and organized.
+          </p>
+
+          <div class="tags">
+            <span class="chip">Communication</span>
+            <span class="chip">Presentation</span>
+            <span class="chip">Visual Output</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__thumb">
+            <div class="thumb-content">
+              <p class="small">Use Case 05</p>
+              <h3>AI Tool Evaluation</h3>
+            </div>
+          </div>
+
+          <p>
+            <strong>What it is:</strong> An assignment that evaluated an AI tool, platform, or
+            workflow in terms of usefulness, limitations, or relevance to professional practice.
+          </p>
+          <p>
+            <strong>What it represents:</strong> This example shows a more critical perspective
+            on AI by assessing both value and constraints.
+          </p>
+          <p>
+            <strong>Why it matters:</strong> Responsible adoption requires more than enthusiasm.
+            AEC professionals need to understand where AI is helpful, where it is limited,
+            and what kinds of decisions still require human judgment.
+          </p>
+
+          <div class="tags">
+            <span class="chip">Evaluation</span>
+            <span class="chip">Critical Review</span>
+            <span class="chip">AI Tools</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__thumb">
+            <div class="thumb-content">
+              <p class="small">Use Case 06</p>
+              <h3>Final Course Project</h3>
+            </div>
+          </div>
+
+          <p>
+            <strong>What it is:</strong> A major semester project that combines course concepts,
+            research, analysis, and applied thinking related to AI in design and construction.
+          </p>
+          <p>
+            <strong>What it represents:</strong> This entry can serve as the strongest example
+            of how your work developed over the course of the semester.
+          </p>
+          <p>
+            <strong>Why it matters:</strong> A final project demonstrates how separate assignments,
+            tools, and ideas can be brought together into one more complete application or argument.
+          </p>
+
+          <div class="tags">
+            <span class="chip">Final Project</span>
+            <span class="chip">Semester Work</span>
+            <span class="chip">Application</span>
           </div>
         </article>
       </div>
     </section>
 
     <section class="section section--tight">
-      <div class="container template-grid">
-        <div class="template-note">
-          <span class="eyebrow">Project page structure</span>
-          <h3>Suggested detail-page sections</h3>
-          <ul>
-            <li>Project title and short overview</li>
-            <li>Your role and the tools you used</li>
-            <li>Process, steps, or workflow</li>
-            <li>Images, screenshots, or outputs</li>
-            <li>Main takeaway or what you learned</li>
-          </ul>
+      <div class="container section-header">
+        <div>
+          <span class="eyebrow">Suggested additions</span>
+          <h2>Ways to strengthen this page</h2>
         </div>
-        <div class="template-note">
-          <span class="eyebrow">Good practice</span>
-          <h3>Keep the project story focused.</h3>
-          <p>Even when a project is technical, it helps to explain the purpose first, then the process, then the result. That makes the page readable for classmates, instructors, and future visitors.</p>
-        </div>
+      </div>
+
+      <div class="container grid-2">
+        <article class="panel">
+          <h3>Add supporting materials</h3>
+          <p>
+            You can strengthen each entry by adding screenshots, links to files, prompt excerpts,
+            short captions, or a separate detail page for larger assignments.
+          </p>
+        </article>
+
+        <article class="panel">
+          <h3>Keep the explanations specific</h3>
+          <p>
+            The strongest entries explain not only what you did, but also why the example
+            matters in an AEC context. That added explanation is what turns a class assignment
+            into a meaningful portfolio item.
+          </p>
+        </article>
       </div>
     </section>
   </main>
@@ -192,28 +315,32 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <h3>AI in Design &amp; Construction</h3>
-        <p>Project overview page for assignments and semester work.</p>
+        <h3>AI in Design and Construction</h3>
+        <p>A semester portfolio featuring background, weekly AI news analysis, and AI in AEC use cases.</p>
       </div>
+
       <div>
         <h4>Pages</h4>
         <ul class="footer-list">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Me</a></li>
-          <li><a href="articles.html">Weekly Articles</a></li>
+          <li><a href="news.html">AI News Analysis</a></li>
         </ul>
       </div>
+
       <div>
-        <h4>Templates</h4>
+        <h4>Links</h4>
         <ul class="footer-list">
-          <li><a href="project-detail.html">Project detail page</a></li>
-          <li><a href="article-detail.html">Article detail page</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Email</a></li>
+          <li><a href="#">GitHub</a></li>
         </ul>
       </div>
     </div>
+
     <div class="container footer-bottom">
-      <span>© 2026 Your Name. Update before publishing.</span>
-      <span>Static site for GitHub Pages.</span>
+      <span>© 2026 Your Name</span>
+      <span>Built for GitHub Pages</span>
     </div>
   </footer>
 
