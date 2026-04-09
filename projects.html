@@ -45,7 +45,7 @@
           </p>
 
           <div class="hero__actions">
-            <a class="button" href="#use-case-grid">View Assignment</a>
+            <a class="button" href="#use-case-grid">View Project</a>
             <a class="button-outline" href="articles.html">AI News Analysis</a>
           </div>
         </div>
@@ -56,41 +56,107 @@
       <div class="container section-header">
         <div>
           <span class="eyebrow">Portfolio Entry</span>
-          <h2>Assignment or project example</h2>
+          <h2>Custom GPT project</h2>
         </div>
         <p class="lead">
-          Replace the sample content below with one actual assignment submission.
+          This project focuses on a practical documentation task in construction administration.
         </p>
       </div>
 
       <div class="container grid-3">
         <article class="project-card">
           <div class="project-card__thumb">
-            <div class="thumb-content">
-              <p class="small">Use Case 01</p>
-              <h3>AI-Assisted Research Summary</h3>
-            </div>
+            <img src="images/rfi-thumbnail.png" alt="Illustration of a construction Request for Information form in front of a jobsite">
           </div>
 
           <p>
-            <strong>What it is:</strong> A class assignment that used AI to summarize a topic,
-            article, or emerging issue related to the AEC industry.
+            <strong>Project:</strong> Construction RFI Analyst
           </p>
           <p>
-            <strong>What it represents:</strong> This example shows how AI can support information
-            synthesis, literature review, and faster understanding of complex topics.
+            <strong>What it is:</strong> A custom mini-agent built to help users review, summarize,
+            classify, draft, and improve construction Requests for Information (RFIs).
           </p>
           <p>
-            <strong>Why it matters:</strong> In AEC work, professionals often review large amounts
-            of technical information. AI-assisted summarization may help improve efficiency and
-            make information easier to interpret.
+            <strong>What it represents:</strong> This project demonstrates how AI can support
+            construction documentation workflows by extracting key information, identifying weak
+            or missing details, and improving the clarity of project communication.
+          </p>
+          <p>
+            <strong>Why it matters:</strong> RFIs are a routine but time-sensitive part of project
+            delivery. A focused AI tool can help reduce repetitive review work, improve the quality
+            of written RFIs, and make requests easier for design and project teams to answer.
           </p>
 
           <div class="tags">
-            <span class="chip">Research</span>
-            <span class="chip">Summarization</span>
-            <span class="chip">Course Assignment</span>
+            <span class="chip">Custom GPT</span>
+            <span class="chip">Construction Documentation</span>
+            <span class="chip">RFI Workflow</span>
           </div>
+
+          <div class="project-card__footer">
+            <span class="small muted">Focused course project</span>
+            <a class="arrow-link" href="https://chatgpt.com/g/g-69b2e28657908191b0d00060a6cceb79-construction-rfi-analyst" target="_blank">View GPT →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container grid-2">
+        <article class="panel">
+          <h3>How it was built</h3>
+          <p>
+            The mini-agent was intentionally scoped only to RFIs so that its responses would stay
+            focused and consistent. Its instructions defined five main tasks: reviewing existing RFIs,
+            summarizing the issue, classifying the likely RFI type, identifying missing or weak
+            information, and drafting new RFIs from field issues.
+          </p>
+          <p>
+            It was also instructed not to invent project facts, drawing references, specification
+            sections, cost impacts, or schedule impacts when that information was missing.
+          </p>
+        </article>
+
+        <article class="panel">
+          <h3>Knowledge and references used</h3>
+          <p>
+            The setup was supported by three main references: an Autodesk Construction Cloud RFI
+            template, a set of sample RFIs, and an RFI writing guide created for this project.
+          </p>
+          <p>
+            Those materials were used to ground the GPT in standard RFI structure, common RFI
+            categories, writing principles, and common weaknesses such as vague wording, missing
+            references, and unclear locations.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container grid-2">
+        <article class="panel">
+          <h3>What I learned</h3>
+          <p>
+            Testing showed that the mini-agent was most useful for repetitive tasks such as reviewing
+            wording, flagging unclear references or missing details, and improving vague draft RFIs.
+            It was especially helpful when the goal was to make an RFI easier to understand and easier
+            to answer.
+          </p>
+        </article>
+
+        <article class="panel">
+          <h3>Limits and professional judgment</h3>
+          <p>
+            The project also showed that AI still needs human review. In testing, the mini-agent could
+            become repetitive and sometimes treated placeholder text as if it were real project
+            information. It could improve wording, but it could not recover missing project-specific
+            details such as exact locations or drawing references that were never provided.
+          </p>
+          <p>
+            That reinforced an important lesson: AI can be useful as a support tool in construction
+            documentation, but it is not a substitute for project knowledge, responsible review, or
+            professional judgment.
+          </p>
         </article>
       </div>
     </section>
@@ -115,15 +181,15 @@
       <div>
         <h4>Links</h4>
         <ul class="footer-list">
-          <li><a href="#">LinkedIn</a></li>
-          <li><a href="#">Email</a></li>
+          <li><a href="http://www.linkedin.com/in/ibilola-ogundare" target="_blank">LinkedIn</a></li>
+          <li><a href="mailto:ibilola_ogundare@ku.edu">Email</a></li>
           <li><a href="#">GitHub</a></li>
         </ul>
       </div>
     </div>
 
     <div class="container footer-bottom">
-      <span>© 2026 Your Name</span>
+      <span>© 2026 Ibilola Ogundare</span>
       <span>Built for GitHub Pages</span>
     </div>
   </footer>
