@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header class="site-header">
     <nav class="navbar">
@@ -36,128 +37,359 @@
           <span class="eyebrow">Assignments and Projects</span>
           <h1>Examples of AI in AEC Use Cases</h1>
           <p class="lead">
-            This page presents class assignments and projects that illustrate how artificial
-            intelligence can be applied in architecture, engineering, and construction contexts.
+            This page presents class assignments and projects that illustrate how artificial intelligence can be applied in architecture, engineering, and construction contexts.
           </p>
           <p>
-            Each entry includes a short description of the work, what the item represents,
-            and why the use case is helpful, important, or relevant to AEC practice.
+            Each entry includes a description of the use case, how the AI tool was used, what it produced, and what the activity showed about the role of AI in AEC practice.
           </p>
 
           <div class="hero__actions">
-            <a class="button" href="#use-case-grid">View Project</a>
+            <a class="button" href="#use-cases">View Use Cases</a>
             <a class="button-outline" href="articles.html">AI News Analysis</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section section--tight" id="use-case-grid">
+    <section class="section section--tight" id="use-cases">
       <div class="container section-header">
         <div>
-          <span class="eyebrow">Portfolio Entry</span>
-          <h2>Custom GPT project</h2>
+          <span class="eyebrow">Portfolio Entries</span>
+          <h2>AI in AEC use cases</h2>
+          <p class="lead">
+            Click each use case to view the full description, supporting materials, reflections, and links.
+          </p>
         </div>
-        <p class="lead">
-          This project focuses on a practical documentation task in construction administration.
-        </p>
       </div>
 
-      <div class="container grid-3">
-        <article class="project-card">
-          <div class="project-card__thumb">
-            <img src="images/rfi-thumbnail.png.png" alt="Illustration of a construction Request for Information form in front of a jobsite">
+      <div class="container use-case-accordion">
+
+        <!-- USE CASE 01 -->
+        <details class="use-case-entry">
+          <summary>
+            <span>Use Case 01</span>
+            <strong>Togal.AI: AI-Powered Takeoff Tool</strong>
+          </summary>
+
+          <div class="use-case-entry__content">
+            <p>
+              <strong>Tool used:</strong> Togal.AI
+            </p>
+
+            <p>
+              <strong>What it is:</strong> Togal.AI is an AI-powered takeoff platform that helps users extract quantities from construction drawings. In this activity, the tool was used to test how well AI could identify building areas, openings, walls, fixtures, foundation elements, and other takeoff items from different types of drawings.
+            </p>
+
+            <div class="project-card__thumb">
+              <img src="images/togal/togal-screenshot.png" alt="Screenshot of Togal.AI interface showing an architectural drawing and AI-assisted takeoff panel">
+            </div>
+
+            <h3>How I used it</h3>
+            <p>
+              I used Togal.AI to review several project drawing sets and compare the AI-generated takeoffs with manual review. The purpose was not only to test whether the software could produce quantities quickly, but also to understand where human review was still needed.
+            </p>
+
+            <p>
+              The drawings tested included a military office, fire station, multistory hotel, youth center, and car dealership. These examples included floor plans, reflected ceiling plans, foundation plans, and exterior elevations.
+            </p>
+
+            <h3>Documents tested</h3>
+            <ul>
+              <li>Military Office — Floor Plan and Reflected Ceiling Plan</li>
+              <li>Fire Station — First and Second Floor Plans</li>
+              <li>Multistory Hotel — Level 1 Floor Plan</li>
+              <li>Youth Center — Foundation Plan</li>
+              <li>Car Dealership — Exterior Elevations</li>
+            </ul>
+
+            <h3>Key observations</h3>
+            <p>
+              Togal.AI was useful for quickly identifying major building areas and producing an initial takeoff. However, the exercise showed that AI-generated takeoffs still require careful human checking. Some elements were missed, some were misclassified, and some drawings were harder for the tool to interpret than others.
+            </p>
+
+            <ul>
+              <li>
+                On the military office drawing, some windows were not accounted for in the floor plan. In the reflected ceiling plan, fluorescent strip lighting was incorrectly included in the wall perimeter calculation.
+              </li>
+              <li>
+                On the fire station drawings, windows and curtain wall areas were not fully captured, so they had to be manually counted and added.
+              </li>
+              <li>
+                On the multistory hotel drawing, windows were not captured in the AI takeoff and had to be manually counted.
+              </li>
+              <li>
+                On the youth center foundation plan, different foundation types were not identified by the AI, so each footing type had to be counted and adjusted manually.
+              </li>
+              <li>
+                On the car dealership exterior elevations, the AI struggled to read the elevation sheet, so selected walls, windows, doors, and curtain wall elements had to be accounted for manually.
+              </li>
+            </ul>
+
+            <h3>Manual corrections made</h3>
+            <p>
+              The manual corrections showed that the AI output should be treated as a starting point, not a final takeoff. The corrections included adding missed windows, revising curtain wall and facade areas, removing incorrectly included ceiling elements, adjusting area calculations, and manually counting foundation and elevation components.
+            </p>
+
+            <h3>What I learned</h3>
+            <p>
+              This use case showed that AI can improve speed during quantity takeoff, especially at the early review stage. However, it also showed that construction drawings still require professional interpretation. AI may identify large areas quickly, but it can miss openings, confuse drawing features, struggle with less-developed drawings, and misread elevation or foundation information.
+            </p>
+
+            <p>
+              The main lesson is that AI-powered takeoff tools can support estimators and project teams, but they should be used with human verification. The value is strongest when AI handles the first pass and the professional checks, corrects, and interprets the output.
+            </p>
+
+            <h3>Supporting files</h3>
+            <p>
+              The following files should be uploaded to a <strong>documents/togal</strong> folder in GitHub using the same filenames shown below.
+            </p>
+
+            <ul>
+              <li><a href="documents/togal/fire-station-takeoff.pdf" target="_blank">Fire Station Takeoff</a></li>
+              <li><a href="documents/togal/military-office-takeoff.pdf" target="_blank">Military Office Takeoff</a></li>
+              <li><a href="documents/togal/multistory-hotel-takeoff.pdf" target="_blank">Multistory Hotel Takeoff</a></li>
+              <li><a href="documents/togal/car-dealership-takeoff.pdf" target="_blank">Car Dealership Takeoff</a></li>
+              <li><a href="documents/togal/youth-center-takeoff.pdf" target="_blank">Youth Center Takeoff</a></li>
+              <li><a href="documents/togal/manual-corrections-to-ai-takeoffs.pdf" target="_blank">Manual Corrections to AI Takeoffs</a></li>
+            </ul>
+
+            <div class="tags">
+              <span class="chip">Togal.AI</span>
+              <span class="chip">Quantity Takeoff</span>
+              <span class="chip">Estimating</span>
+              <span class="chip">Human Review</span>
+            </div>
           </div>
+        </details>
 
-          <p>
-            <strong>Project:</strong> Construction RFI Analyst
-          </p>
-          <p>
-            <strong>What it is:</strong> A custom mini-agent built to help users review, summarize,
-            classify, draft, and improve construction Requests for Information (RFIs).
-          </p>
-          <p>
-            <strong>What it represents:</strong> This project demonstrates how AI can support
-            construction documentation workflows by extracting key information, identifying weak
-            or missing details, and improving the clarity of project communication.
-          </p>
-          <p>
-            <strong>Why it matters:</strong> RFIs are a routine but time-sensitive part of project
-            delivery. A focused AI tool can help reduce repetitive review work, improve the quality
-            of written RFIs, and make requests easier for design and project teams to answer.
-          </p>
+        <!-- USE CASE 02 -->
+        <details class="use-case-entry">
+          <summary>
+            <span>Use Case 02</span>
+            <strong>Reviewing Custom-Built Mini Agents</strong>
+          </summary>
 
-          <div class="tags">
-            <span class="chip">Custom GPT</span>
-            <span class="chip">Construction Documentation</span>
-            <span class="chip">RFI Workflow</span>
+          <div class="use-case-entry__content">
+            <p>
+              <strong>Tools reviewed:</strong> Harvard MBA – Consulting Management and Construction GPT
+            </p>
+
+            <p>
+              <strong>Purpose of the use case:</strong> This activity reviewed two custom-built GPTs to understand how specialized mini-agents perform on different AEC-related tasks. The first GPT was tested on a capital project recovery problem, while the second was tested on a job hazard analysis for a renovation project.
+            </p>
+
+            <h3>Mini-agent 1: Harvard MBA – Consulting Management</h3>
+            <p>
+              I used the Harvard MBA – Consulting Management GPT to work through a $1.2 billion hospital project with cost and schedule overruns. The tool handled the project controls side well. It calculated CPI, SPI, and EAC correctly, and when I asked for the math needed to reach a final CPI of 0.92, it showed that the remaining work would need to perform around CPI = 1.05.
+            </p>
+
+            <p>
+              That was the most useful part because I could check the calculation myself. However, when the prompt stayed broad, the GPT shifted into general executive language and began referencing sources I did not ask for. At that point, it felt more like a business case discussion than a focused construction project controls analysis.
+            </p>
+
+            <p>
+              This made sense because the GPT appeared to be built more for general management consulting than for niche construction project controls. I still found it useful for this type of problem, but only when the questions were specific and focused.
+            </p>
+
+            <h3>Mini-agent 2: Construction GPT</h3>
+            <p>
+              The Construction GPT was more practical and closer to how the field actually thinks. I used it to develop a Job Hazard Analysis for a renovation project. It broke the work into clear task steps and flagged hazards that mattered for a night-shift project, including sprinklers, live utilities above ceilings, dust migration, and fatigue.
+            </p>
+
+            <p>
+              It also converted the information into a one-page format that a foreman could realistically use, which was exactly what I wanted. However, it still needed follow-up prompts to tighten responsibility and verification so that everything was not placed on the foreman. It also needed prompting to make the final output more concise.
+            </p>
+
+            <h3>What I learned</h3>
+            <p>
+              This review showed that custom-built GPTs can be helpful, but their usefulness depends heavily on how well the tool fits the task. The consulting-focused GPT worked well for structured project controls calculations, but became too general when the question was broad. The construction-focused GPT was stronger for field-oriented safety planning, but still needed professional review and refinement.
+            </p>
+
+            <p>
+              Overall, mini-agents can speed up drafting, analysis, formatting, and structured thinking. However, they still require clear prompts, user judgment, and review by someone familiar with the project context.
+            </p>
+
+            <h3>Links reviewed</h3>
+            <ul>
+              <li><a href="https://chatgpt.com/g/g-owta5yvHW-harvard-mba-consulting-management/c/69a73b05-c270-832a-8a6c-08d9622a0eda" target="_blank">Harvard MBA – Consulting Management GPT</a></li>
+              <li><a href="https://chatgpt.com/g/g-67b8041c13f081918fe2dbb61b274bf9-construction-gpt/c/69a737f1-b058-8332-b381-d2da14edf072" target="_blank">Construction GPT</a></li>
+            </ul>
+
+            <div class="tags">
+              <span class="chip">Mini-Agents</span>
+              <span class="chip">Project Controls</span>
+              <span class="chip">Job Hazard Analysis</span>
+              <span class="chip">Construction Safety</span>
+            </div>
           </div>
+        </details>
 
-          <div class="project-card__footer">
-            <span class="small muted">Focused course project</span>
-            <a class="arrow-link" href="https://chatgpt.com/g/g-69b2e28657908191b0d00060a6cceb79-construction-rfi-analyst" target="_blank">View GPT →</a>
+        <!-- USE CASE 03 -->
+        <details class="use-case-entry">
+          <summary>
+            <span>Use Case 03</span>
+            <strong>Using a Book Review GPT: Outliers by Malcolm Gladwell</strong>
+          </summary>
+
+          <div class="use-case-entry__content">
+            <p>
+              <strong>Tool used:</strong> Book Summarizer GPT
+            </p>
+
+            <p>
+              <strong>Book reviewed:</strong> <em>Outliers: The Story of Success</em> by Malcolm Gladwell
+            </p>
+
+            <p>
+              <strong>Purpose of the use case:</strong> This activity used a Book Review GPT to summarize and interpret Malcolm Gladwell’s <em>Outliers</em>. The goal was to see how a specialized GPT could help distill the main argument, identify key ideas, and turn a book into a structured review.
+            </p>
+
+            <h3>AI-generated book review</h3>
+            <p>
+              The generated review explains that <em>Outliers</em> challenges the idea that success is only the result of individual brilliance. Instead, it presents success as something shaped by opportunity, timing, culture, accumulated advantage, and sustained effort. The review compares success to two trees planted in different soils: one grows tall and the other struggles, not necessarily because one seed is better, but because the surrounding conditions are different.
+            </p>
+
+            <p>
+              The main idea is that outliers are not simply anomalies of talent. They are often beneficiaries of patterns, systems, and opportunities that make exceptional achievement possible.
+            </p>
+
+            <h3>Key ideas from the book</h3>
+
+            <h4>The 10,000-Hour Rule</h4>
+            <p>
+              The review explains that Gladwell popularized the idea that mastery requires roughly 10,000 hours of deliberate practice. However, the deeper point is not the exact number. The key idea is accumulated advantage. People who reach mastery are often those who receive early access to opportunities that allow them to practice intensely over time.
+            </p>
+
+            <h4>The Matthew Effect</h4>
+            <p>
+              The Matthew Effect describes how early advantages compound. Small differences at the beginning can lead to better coaching, more confidence, more practice, and stronger long-term outcomes. What may look like natural superiority is often the result of a system that amplifies early advantages.
+            </p>
+
+            <h4>Cultural Legacy</h4>
+            <p>
+              The review also highlights cultural legacy. Gladwell argues that attitudes toward authority, risk, communication, and work are shaped by cultural inheritance. These invisible scripts can affect outcomes in areas such as aviation, mathematics, entrepreneurship, and professional performance.
+            </p>
+
+            <h4>Meaningful Work and Autonomy</h4>
+            <p>
+              Another major idea is that high achievers often engage in work that is complex, autonomous, and meaningful. Autonomy fuels persistence, complexity builds skill, and meaning sustains long-term effort.
+            </p>
+
+            <h3>Action plan generated by the GPT</h3>
+            <ul>
+              <li><strong>Engineer deliberate practice:</strong> Structure growth around focused, feedback-driven practice rather than waiting for inspiration.</li>
+              <li><strong>Seek and create opportunities:</strong> Build proximity to better mentors, networks, and learning environments.</li>
+              <li><strong>Leverage cultural strengths:</strong> Reflect on inherited habits, values, and communication styles, then amplify strengths and correct blind spots.</li>
+              <li><strong>Build meaning into work:</strong> Choose projects and environments that support autonomy, purpose, and long-term growth.</li>
+            </ul>
+
+            <h3>What I learned</h3>
+            <p>
+              This use case showed that a Book Review GPT can help organize a complex book into a clear structure. It was useful for identifying themes, explaining key concepts, and turning the book into action-oriented takeaways. However, the output still needs human review because a book review should reflect the reader’s own interpretation, not only the GPT’s summary.
+            </p>
+
+            <p>
+              For AEC learning and professional development, a tool like this could help students and professionals process books on leadership, productivity, project management, safety culture, innovation, and organizational behavior. It can support learning, but it should not replace reading or personal reflection.
+            </p>
+
+            <h3>Related reading suggested by the GPT</h3>
+            <ul>
+              <li><em>Peak</em> by Anders Ericsson</li>
+              <li><em>Mindset</em> by Carol Dweck</li>
+              <li><em>Grit</em> by Angela Duckworth</li>
+            </ul>
+
+            <h3>Links</h3>
+            <ul>
+              <li><a href="https://chatgpt.com/g/g-uO67OcaHD-book-summarizer" target="_blank">Book Summarizer GPT</a></li>
+              <li><a href="https://www.hachettebookgroup.com/titles/malcolm-gladwell/outliers/9780316017923/" target="_blank">Purchase or learn more about <em>Outliers</em></a></li>
+            </ul>
+
+            <div class="tags">
+              <span class="chip">Book Review GPT</span>
+              <span class="chip">Outliers</span>
+              <span class="chip">Professional Growth</span>
+              <span class="chip">Learning Tool</span>
+            </div>
           </div>
-        </article>
-      </div>
-    </section>
+        </details>
 
-    <section class="section section--tight">
-      <div class="container grid-2">
-        <article class="panel">
-          <h3>How it was built</h3>
-          <p>
-            The mini-agent was intentionally scoped only to RFIs so that its responses would stay
-            focused and consistent. Its instructions defined five main tasks: reviewing existing RFIs,
-            summarizing the issue, classifying the likely RFI type, identifying missing or weak
-            information, and drafting new RFIs from field issues.
-          </p>
-          <p>
-            It was also instructed not to invent project facts, drawing references, specification
-            sections, cost impacts, or schedule impacts when that information was missing.
-          </p>
-        </article>
+        <!-- USE CASE 04 -->
+        <details class="use-case-entry">
+          <summary>
+            <span>Use Case 04</span>
+            <strong>Creating a Custom-Built Mini-Agent: Construction RFI Analyst</strong>
+          </summary>
 
-        <article class="panel">
-          <h3>Knowledge and references used</h3>
-          <p>
-            The setup was supported by three main references: an Autodesk Construction Cloud RFI
-            template, a set of sample RFIs, and an RFI writing guide created for this project.
-          </p>
-          <p>
-            Those materials were used to ground the GPT in standard RFI structure, common RFI
-            categories, writing principles, and common weaknesses such as vague wording, missing
-            references, and unclear locations.
-          </p>
-        </article>
-      </div>
-    </section>
+          <div class="use-case-entry__content">
+            <div class="project-card__thumb">
+              <img src="images/rfi-thumbnail.png.png" alt="Illustration of a construction Request for Information form in front of a jobsite">
+            </div>
 
-    <section class="section section--tight">
-      <div class="container grid-2">
-        <article class="panel">
-          <h3>What I learned</h3>
-          <p>
-            Testing showed that the mini-agent was most useful for repetitive tasks such as reviewing
-            wording, flagging unclear references or missing details, and improving vague draft RFIs.
-            It was especially helpful when the goal was to make an RFI easier to understand and easier
-            to answer.
-          </p>
-        </article>
+            <p>
+              <strong>Project:</strong> Construction RFI Analyst
+            </p>
 
-        <article class="panel">
-          <h3>Limits and professional judgment</h3>
-          <p>
-            The project also showed that AI still needs human review. In testing, the mini-agent could
-            become repetitive and sometimes treated placeholder text as if it were real project
-            information. It could improve wording, but it could not recover missing project-specific
-            details such as exact locations or drawing references that were never provided.
-          </p>
-          <p>
-            That reinforced an important lesson: AI can be useful as a support tool in construction
-            documentation, but it is not a substitute for project knowledge, responsible review, or
-            professional judgment.
-          </p>
-        </article>
+            <p>
+              <strong>What it is:</strong> A custom mini-agent built to help users review, summarize, classify, draft, and improve construction Requests for Information.
+            </p>
+
+            <p>
+              <strong>What it represents:</strong> This project demonstrates how AI can support construction documentation workflows by extracting key information, identifying weak or missing details, and improving the quality of project communication.
+            </p>
+
+            <p>
+              <strong>Why it matters:</strong> RFIs are a routine but time-sensitive part of project delivery. A focused AI tool can help reduce repetitive review work, improve the quality of written RFIs, and make requests easier for design and project teams to answer.
+            </p>
+
+            <h3>How it was built</h3>
+            <p>
+              The mini-agent was intentionally scoped only to RFIs so that its responses would stay focused and consistent. Its instructions defined five main tasks: reviewing existing RFIs, summarizing the issue, classifying the likely RFI type, identifying missing or weak information, and drafting new RFIs from field issues.
+            </p>
+
+            <p>
+              It was also instructed not to invent project facts, drawing references, specification sections, cost impacts, or schedule impacts when that information was missing.
+            </p>
+
+            <h3>Knowledge and references used</h3>
+            <p>
+              The setup was supported by three main references: an Autodesk Construction Cloud RFI template, a set of sample RFIs, and an RFI writing guide created for this project.
+            </p>
+
+            <p>
+              Those materials were used to ground the GPT in standard RFI structure, common RFI categories, writing principles, and common weaknesses such as vague wording, missing references, and unclear locations.
+            </p>
+
+            <h3>What I learned</h3>
+            <p>
+              Testing showed that the mini-agent was most useful for repetitive tasks such as reviewing wording, flagging unclear references or missing details, and improving vague draft RFIs. It was especially helpful when the goal was to make an RFI easier to understand and easier to answer.
+            </p>
+
+            <h3>Limits and professional judgment</h3>
+            <p>
+              The project also showed that AI still needs human review. In testing, the mini-agent could become repetitive and sometimes treated placeholder text as if it were real project information. It could improve wording, but it could not recover missing project-specific details such as exact locations or drawing references that were never provided.
+            </p>
+
+            <p>
+              That reinforced an important lesson: AI can be useful as a support tool in construction documentation, but it is not a substitute for project knowledge, responsible review, or professional judgment.
+            </p>
+
+            <h3>Link</h3>
+            <p>
+              <a class="button-outline" href="https://chatgpt.com/g/g-69b2e28657908191b0d00060a6cceb79-construction-rfi-analyst" target="_blank">
+                View Construction RFI Analyst GPT
+              </a>
+            </p>
+
+            <div class="tags">
+              <span class="chip">Custom GPT</span>
+              <span class="chip">Construction Documentation</span>
+              <span class="chip">RFI Workflow</span>
+              <span class="chip">Professional Judgment</span>
+            </div>
+          </div>
+        </details>
+
       </div>
     </section>
   </main>
@@ -183,7 +415,7 @@
         <ul class="footer-list">
           <li><a href="http://www.linkedin.com/in/ibilola-ogundare" target="_blank">LinkedIn</a></li>
           <li><a href="mailto:ibilola_ogundare@ku.edu">Email</a></li>
-          <li><a href="#">GitHub</a></li>
+          <li><a href="https://github.com/Ibilola-KU/Portfolio" target="_blank">GitHub</a></li>
         </ul>
       </div>
     </div>
