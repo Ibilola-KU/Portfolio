@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header class="site-header">
     <nav class="navbar">
@@ -40,7 +41,7 @@
           </p>
 
           <div class="hero__actions">
-            <a class="button" href="#weekly-entries">View Entry</a>
+            <a class="button" href="#weekly-entries">View Entries</a>
             <a class="button-outline" href="projects.html">See AI in AEC Use Cases</a>
           </div>
         </div>
@@ -50,27 +51,43 @@
     <section class="section section--tight" id="weekly-entries">
       <div class="container section-header">
         <div>
-          <span class="eyebrow">Weekly Entry</span>
-          <h2>Article summary and reflection</h2>
+          <span class="eyebrow">Weekly Entries</span>
+          <h2>Article summaries and reflections</h2>
+          <p class="lead">
+            Click each weekly entry to view the article summary, key takeaways, broader implications, and relevance to the AEC industry.
+          </p>
         </div>
       </div>
 
-      <div class="container article-list">
-        <article class="article-row">
-          <div class="article-card">
-            <div class="article-card__thumb">
-              <div class="thumb-content">
-                <p class="small">Week 01</p>
-                <h3>Construction Companies See Promise in AI Agents</h3>
-              </div>
-            </div>
+      <div class="container weekly-accordion">
 
+        <details class="weekly-entry">
+          <summary>
+            <span>Week 01</span>
+            <strong>Construction Companies See Promise in AI Agents</strong>
+          </summary>
+
+          <div class="weekly-entry__content">
             <p><strong>Source:</strong> The Wall Street Journal, January 2026</p>
+
+            <h3>Summary</h3>
             <p>
-              <strong>Summary:</strong> This article explains how construction software companies are deploying AI-powered agents to help site managers and foremen handle complex and time-consuming tasks such as safety monitoring, documentation, scheduling, and reporting. These tools combine large language models, computer vision, and natural language processing to synthesize project data and support more efficient interaction with information on the jobsite.
+              This article explains how construction software companies are deploying AI-powered agents to help site managers and foremen handle complex and time-consuming tasks such as safety monitoring, documentation, scheduling, and reporting. These tools combine large language models, computer vision, and natural language processing to synthesize project data and support more efficient interaction with information on the jobsite.
             </p>
+
+            <h3>Why it matters</h3>
             <p>
-              <strong>Why it matters:</strong> The article is relevant because it connects AI adoption to real industry pressures, including labor shortages, workforce retirement, and the growing need to capture expert knowledge before it is lost. It suggests that the value of AI in construction may come less from replacing professionals and more from helping them work more efficiently, document information more effectively, and preserve organizational knowledge.
+              The article is relevant because it connects AI adoption to real industry pressures, including labor shortages, workforce retirement, and the growing need to capture expert knowledge before it is lost. It suggests that the value of AI in construction may come less from replacing professionals and more from helping them work more efficiently, document information more effectively, and preserve organizational knowledge.
+            </p>
+
+            <h3>Key takeaway</h3>
+            <p>
+              AI agents appear most useful when they are embedded in practical construction workflows. Their value comes from supporting field and project teams with decision support, documentation, and knowledge capture rather than trying to remove human judgment from the process.
+            </p>
+
+            <h3>Class connection</h3>
+            <p>
+              This article connects well to course discussions about applied AI in the built environment. It shows how AI is moving from general-purpose experimentation toward more specific uses tied to construction management, coordination, and operational efficiency.
             </p>
 
             <div class="tags">
@@ -79,20 +96,200 @@
               <span class="chip">Week 01</span>
             </div>
           </div>
+        </details>
 
-          <aside class="panel">
-            <span class="eyebrow">Key Takeaway</span>
-            <h3>Main insight</h3>
+        <details class="weekly-entry">
+          <summary>
+            <span>Week 02</span>
+            <strong>How AI Is Transforming the Future of Construction</strong>
+          </summary>
+
+          <div class="weekly-entry__content">
+            <p><strong>Source:</strong> Trimble, November 2025</p>
+
+            <h3>Main findings and arguments</h3>
             <p>
-              One of the main takeaways from this article is that AI agents appear most useful when they are embedded in practical construction workflows. Their value comes from supporting field and project teams with decision support, documentation, and knowledge capture rather than trying to remove human judgment from the process.
+              The article discusses the shift from narrow AI, which performs specific and repetitive tasks, toward agentic AI, which can plan and execute more complex workflows. It argues that AI can help the construction industry address labor shortages, unlock fragmented project data, improve interoperability, and automate repetitive or dangerous tasks while preserving human judgment.
             </p>
 
-            <h3 style="margin-top: 1.75rem;">Class connection</h3>
+            <h3>Broader implications for society</h3>
             <p>
-              This article connects well to course discussions about applied AI in the built environment. It shows how AI is moving from general-purpose experimentation toward more specific uses tied to construction management, coordination, and operational efficiency.
+              The article raises broader questions about business model changes, system reliability, regulation, and the ethical use of autonomous systems in industries where safety and accountability matter. It also shows that different regions may approach AI oversight differently, with some favoring stricter supervision and others prioritizing innovation.
             </p>
-          </aside>
-        </article>
+
+            <h3>Relevance to AEC</h3>
+            <p>
+              The article is relevant to AEC because it shows how AI can support field monitoring, design modeling, data interoperability, and decision-making in construction workflows. It also reinforces the idea that successful AI adoption in construction should amplify the judgment and expertise of builders rather than replace them.
+            </p>
+
+            <div class="tags">
+              <span class="chip">Agentic AI</span>
+              <span class="chip">Construction</span>
+              <span class="chip">Week 02</span>
+            </div>
+          </div>
+        </details>
+
+        <details class="weekly-entry">
+          <summary>
+            <span>Week 03</span>
+            <strong>Nobel Laureates Sound the Alarm Over Artificial Superintelligence</strong>
+          </summary>
+
+          <div class="weekly-entry__content">
+            <p><strong>Source:</strong> The World, October 2025</p>
+
+            <h3>Main findings and arguments</h3>
+            <p>
+              The article discusses concerns about artificial superintelligence and the possibility that systems more intelligent than humans could become difficult or impossible to control. Max Tegmark argues that ASI should not be treated as a simple tool, but as a potentially more powerful form of intelligence that could challenge human agency and decision-making.
+            </p>
+
+            <h3>Broader implications for society</h3>
+            <p>
+              The article highlights concerns about democratic oversight, human dignity, economic disruption, and whether society should restrict or delay the development of ASI until stronger safety frameworks are in place. It also raises the concern that decisions about extremely powerful technologies should not be left only to private technology companies.
+            </p>
+
+            <h3>Relevance to AEC</h3>
+            <p>
+              For the AEC industry, the article matters because highly autonomous systems could eventually affect design automation, infrastructure safety, smart cities, and professional liability. If powerful AI systems are used in building systems, infrastructure operations, or automated construction equipment, human oversight and accountability will become even more important.
+            </p>
+
+            <div class="tags">
+              <span class="chip">ASI</span>
+              <span class="chip">AI Ethics</span>
+              <span class="chip">Week 03</span>
+            </div>
+          </div>
+        </details>
+
+        <details class="weekly-entry">
+          <summary>
+            <span>Week 04</span>
+            <strong>A Benchmark of Expert-Level Academic Questions to Assess AI Capabilities</strong>
+          </summary>
+
+          <div class="weekly-entry__content">
+            <p><strong>Source:</strong> Nature, January 2026</p>
+
+            <h3>Main findings and arguments</h3>
+            <p>
+              The article introduces a difficult expert-level benchmark designed to evaluate frontier AI models at a time when many existing benchmarks are becoming saturated. It argues that as AI models perform very well on older tests, researchers need harder and more defensible ways to measure genuine progress, especially on expert-level academic questions.
+            </p>
+
+            <h3>Broader implications for society</h3>
+            <p>
+              The benchmark highlights the importance of measuring not only AI accuracy, but also uncertainty, confidence, and the limits of model reasoning in high-stakes contexts. This matters because an AI system that gives a confident wrong answer can mislead users, especially when the task involves specialized knowledge or professional judgment.
+            </p>
+
+            <h3>Relevance to AEC</h3>
+            <p>
+              For AEC, this article matters because AI tools used for estimating, code checks, scheduling, design review, or safety planning need to be tested carefully before being trusted in professional practice. The article also suggests that the AEC industry may eventually need its own domain-specific benchmarks for drawings, BIM models, specifications, schedules, and safety scenarios.
+            </p>
+
+            <div class="tags">
+              <span class="chip">AI Benchmarking</span>
+              <span class="chip">Model Evaluation</span>
+              <span class="chip">Week 04</span>
+            </div>
+          </div>
+        </details>
+
+        <details class="weekly-entry">
+          <summary>
+            <span>Week 05</span>
+            <strong>Agentic AI Accelerates Electrical Design</strong>
+          </summary>
+
+          <div class="weekly-entry__content">
+            <p><strong>Source:</strong> AEC Magazine, October 2025</p>
+
+            <h3>Main findings and arguments</h3>
+            <p>
+              The article presents agentic AI as a practical tool for electrical design coordination, especially through platforms that can automate raceway routing, support BIM workflows, and improve design efficiency. It shows AI moving from a general concept into a specific project delivery function with measurable outcomes.
+            </p>
+
+            <h3>Broader implications for society</h3>
+            <p>
+              Faster design workflows could help the construction sector deliver projects more efficiently while reducing waste and easing pressure from labor shortages. This could benefit communities by helping schools, hospitals, commercial buildings, and infrastructure projects move from design to construction more quickly.
+            </p>
+
+            <h3>Relevance to AEC</h3>
+            <p>
+              The article is directly relevant to AEC because it connects agentic AI to measurable project outcomes, including faster design, reduced material waste, and improved prefabrication readiness. It also suggests that specialty trade design may become an important area for AI adoption, especially where design coordination is repetitive, complex, and time-sensitive.
+            </p>
+
+            <div class="tags">
+              <span class="chip">Electrical Design</span>
+              <span class="chip">BIM</span>
+              <span class="chip">Week 05</span>
+            </div>
+          </div>
+        </details>
+
+        <details class="weekly-entry">
+          <summary>
+            <span>Week 06</span>
+            <strong>What Does “Agentic AI” Mean?</strong>
+          </summary>
+
+          <div class="weekly-entry__content">
+            <p><strong>Source:</strong> The Associated Press, November 2025</p>
+
+            <h3>Main findings and arguments</h3>
+            <p>
+              The article explains that agentic AI refers to systems that can plan, act, and complete multistep tasks, rather than only responding to prompts like traditional chatbots. It also notes that the term is sometimes used loosely, which makes it important to distinguish real capability from marketing language.
+            </p>
+
+            <h3>Broader implications for society</h3>
+            <p>
+              The article suggests that AI agents could improve productivity and convenience by helping people complete routine digital tasks. However, it also raises concerns about trust, privacy, accountability, misuse, and human oversight as AI systems become more autonomous and capable of acting on behalf of users.
+            </p>
+
+            <h3>Relevance to AEC</h3>
+            <p>
+              In AEC, agentic AI could support RFIs, submittals, schedules, meeting notes, procurement updates, and project documentation. However, because AEC decisions often involve cost, safety, contracts, and liability, these tools would need strong review processes and clear limits on what should remain under human control.
+            </p>
+
+            <div class="tags">
+              <span class="chip">Agentic AI</span>
+              <span class="chip">Automation</span>
+              <span class="chip">Week 06</span>
+            </div>
+          </div>
+        </details>
+
+        <details class="weekly-entry">
+          <summary>
+            <span>Week 07</span>
+            <strong>Quantum Computers Will Finally Be Useful</strong>
+          </summary>
+
+          <div class="weekly-entry__content">
+            <p><strong>Source:</strong> Nature, February 2026</p>
+
+            <h3>Main findings and arguments</h3>
+            <p>
+              The article argues that quantum computing may become practically useful sooner than previously expected because of advances in error correction, hardware quality, qubit control, and algorithm development. It presents quantum computing as a technology moving closer to real-world usefulness, although major systems engineering challenges remain.
+            </p>
+
+            <h3>Broader implications for society</h3>
+            <p>
+              Useful quantum computers could affect scientific discovery, cybersecurity, materials development, medicine, finance, and other fields that depend on complex computation. The article also points to the need for stronger planning around future encryption risks, since quantum computing could eventually challenge current cybersecurity systems.
+            </p>
+
+            <h3>Relevance to AEC</h3>
+            <p>
+              For AEC, quantum computing could eventually influence materials discovery, project optimization, scheduling, logistics, digital security, and infrastructure planning. Its direct everyday use in construction may still be some distance away, but it is relevant to long-term technology planning because of its potential impact on materials, optimization, and digital security.
+            </p>
+
+            <div class="tags">
+              <span class="chip">Quantum Computing</span>
+              <span class="chip">Emerging Technology</span>
+              <span class="chip">Week 07</span>
+            </div>
+          </div>
+        </details>
+
       </div>
     </section>
   </main>
@@ -118,7 +315,7 @@
         <ul class="footer-list">
           <li><a href="http://www.linkedin.com/in/ibilola-ogundare" target="_blank">LinkedIn</a></li>
           <li><a href="mailto:ibilola_ogundare@ku.edu">Email</a></li>
-          <li><a href="#">GitHub</a></li>
+          <li><a href="https://github.com/Ibilola-KU/Portfolio" target="_blank">GitHub</a></li>
         </ul>
       </div>
     </div>
